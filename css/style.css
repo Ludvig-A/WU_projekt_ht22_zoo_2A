@@ -1,3 +1,77 @@
-header, html {
-    height: 100px
+h* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    grid-area: he;
+    font-size: 40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    white-space: nowrap;
+}
+
+#gridwrapper {
+ display: grid;
+ grid-template-columns: 50vw 50vw;
+ grid-template-rows: 10vh 45vh 45vh;
+ grid-template-areas: 
+ "he rL"
+ "B1 aR"
+ "aL B2"
+ ;
+justify-content: center;
+align-items: center;
+background-color: blanchedalmond;
+}
+
+#articlezooleft {
+    grid-area: aL;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font: size 10px;
+}
+
+#articleanimalsright {
+    grid-area: aR;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font: size 10px;
+}
+
+#picturezooleft {
+    display: flex;
+    grid-area: B1;
+    height: 45vh;
+    width: 50vh;
+    justify-content: center;
+
+}
+
+#picturewolfright {
+    grid-area: B2;
+    display: flex;
+    height: 45vh;
+    width: 50vh;
+    justify-content: center;
+    
+}
+
+#websitelinks {
+    display: flex;
+    grid-area: rL;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font: size 10px;
+    justify-content: center;
+}
+
+a {
+    text-decoration: none;
+    padding: 2px;
+    margin: 5px;
+    border: 5px solid black;
+    border-radius: 3px;
+    background-color: aquamarine;
+    
+}
+
+a:hover {
+    background-color: aqua;
 }
