@@ -19,8 +19,6 @@ header {
  "B1 aR"
  "aL B2"
  ;
-justify-content: center;
-align-items: center;
 background-color: blanchedalmond;
 }
 
@@ -32,8 +30,11 @@ background-color: blanchedalmond;
 
 #articleanimalsright {
     grid-area: aR;
+    display: flex;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font: size 10px;
+    align-items: center;
+    justify-content: center;
 }
 
 #picturezooleft {
@@ -41,7 +42,7 @@ background-color: blanchedalmond;
     grid-area: B1;
     height: 45vh;
     width: 50vh;
-    justify-content: center;
+    justify-content: right;
 
 }
 
